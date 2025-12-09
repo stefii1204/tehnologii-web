@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 40px;
+    background-color: #5d5d5d;
+    font-family: sans-serif;
+}
+
+.wrapper {
+    width: fit-content;
+    margin: auto;
+}
+
+.wrapper-inner {
+    display: grid;
+    grid-template-columns: repeat(8, 60px);
+    margin: 5px 0;
+}
+
+.box-inner {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+
+.chessboard {
+    display: grid;
+    grid-template-columns: repeat(8, 60px);
+    grid-template-rows: repeat(8, 60px);
+}
+
+
+.chessboard div {
+    width: 60px;
+    height: 60px;
+}
+
+
+.chessboard div:nth-child(odd) {
+    background-color: #eee;
+}
+
+.chessboard div:nth-child(even) {
+    background-color: #333;
+}
